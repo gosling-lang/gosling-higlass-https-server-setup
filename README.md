@@ -23,6 +23,6 @@ $ sudo docker exec higlass-container python higlass-server/manage.py ingest_tile
       --filetype multivec \
       --datatype multivec \
       --project-name "gosling-data-v1" \
-      --uid cistrome.multivec
+      --uid cistrome.multivec \
       --coordSystem hg38
 ```
