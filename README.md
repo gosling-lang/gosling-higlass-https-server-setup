@@ -49,4 +49,11 @@ $ sudo docker exec higlass-container python higlass-server/manage.py ingest_tile
       --project-name "gosling-data-v1" \
       --uid cistrome-multivec \
       --coordSystem hg38
+      
+$ sudo docker exec higlass-container python higlass-server/manage.py ingest_tileset \
+      --filename /tmp/hg38.chrom.sizes \
+      --filetype chromsizes-tsv \
+      --datatype chromsizes \
+      --coordSystem hg38 \
+      --uid hg38
 ```
