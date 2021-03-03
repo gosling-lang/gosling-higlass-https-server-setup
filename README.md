@@ -21,7 +21,7 @@ If you recived a "success" message, you are all set!
 
 Let's start the server
 ```sh
-docker-compose up
+sudo docker-compose up
 ```
 
 ### Adding Tilesets
