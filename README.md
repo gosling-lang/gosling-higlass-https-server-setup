@@ -56,4 +56,10 @@ $ sudo docker exec higlass-container python higlass-server/manage.py ingest_tile
       --datatype chromsizes \
       --coordSystem hg38 \
       --uid hg38
+      
+$ sudo docker exec higlass-container python higlass-server/manage.py ingest_tileset \
+      --filename /tmp/Leung2015_Aorta.hg38.mapq_30.1000.mcool
+      --uid leung2015-hg38
+      --filetype cooler
+      --datatype matrix
 ```
