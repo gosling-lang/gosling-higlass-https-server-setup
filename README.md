@@ -58,8 +58,14 @@ $ sudo docker exec higlass-container python higlass-server/manage.py ingest_tile
       --uid hg38
       
 $ sudo docker exec higlass-container python higlass-server/manage.py ingest_tileset \
-      --filename /tmp/Leung2015_Aorta.hg38.mapq_30.1000.mcool
-      --uid leung2015-hg38
-      --filetype cooler
+      --filename /tmp/Leung2015_Aorta.hg38.mapq_30.1000.mcool \
+      --uid leung2015-hg38 \
+      --filetype cooler \
       --datatype matrix
+
+$ sudo docker exec higlass-container python higlass-server/manage.py ingest_tileset \
+      --filename /tmp/Olig2.5k_interactions_ucsc_genome_browser.inter.bb \
+      --filetype bigbed \
+      --datatype bedlike \
+      --uid oligodendrocyte-plac-seq-bedpe 
 ```
