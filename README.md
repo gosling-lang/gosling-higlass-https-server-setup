@@ -68,4 +68,10 @@ $ sudo docker exec higlass-container python higlass-server/manage.py ingest_tile
       --filetype bigbed \
       --datatype bedlike \
       --uid oligodendrocyte-plac-seq-bedpe 
+
+$ sudo docker exec higlass-container python higlass-server/manage.py ingest_tileset \
+    --filename gwas.bed.beddb \
+    --filetype beddb \
+    --datatype bedlike \
+    --uid gwas-beddb
 ```
