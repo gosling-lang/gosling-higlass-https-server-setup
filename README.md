@@ -1,6 +1,11 @@
 # gosling-higlass-https-server-setup
 This repository describes a way to setup a HTTPS HiGlass server using a free Let's Encrypt service. This allows to fetch tiles from a HiGlass server (e.g., https://server.gosling-lang.org) in HTTPS clients (e.g., https://gosling.js.org). Because of the security issue, you cannot fetch tiles if the server is not HTTPS server but the client is HTTPS.
 
+### ssh to the server
+```sh
+ssh -i gosling.pem ubuntu@server.gosling-lang.org
+```
+
 ### Setup
 Reference: https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71
 
