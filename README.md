@@ -80,3 +80,9 @@ $ sudo docker exec higlass-container python higlass-server/manage.py ingest_tile
     --datatype bedlike \
     --uid gwas-beddb
 ```
+
+#### Restart Docker
+```sh
+cd ~/projects/higlass-docker
+sudo docker-compose down && sudo docker-compose pull && sudo docker-compose up
+```
