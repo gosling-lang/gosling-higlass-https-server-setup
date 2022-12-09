@@ -79,6 +79,13 @@ $ sudo docker exec higlass-container python higlass-server/manage.py ingest_tile
     --filetype beddb \
     --datatype bedlike \
     --uid gwas-beddb
+    
+$ sudo docker exec higlass-container python higlass-server/manage.py ingest_tileset \
+    --filename /tmp/gene-mm10.beddb \
+    --filetype beddb \
+    --datatype gene-annotation \
+    --uid gene-annotation-mm10 \
+    --coordSystem mm10
 ```
 
 #### Restart Docker
