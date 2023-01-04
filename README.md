@@ -92,3 +92,8 @@ $ sudo docker exec higlass-container python higlass-server/manage.py ingest_tile
 ```sh
 sudo docker-compose down && sudo docker-compose pull && sudo docker-compose up
 ```
+
+#### To Show Docs 
+```sh
+docker exec -i higlass-container sed -i 's/HGAC_HOMEPAGE_DEMOS=false/HGAC_HOMEPAGE_DEMOS=true/' higlass-app/config.js
+```
